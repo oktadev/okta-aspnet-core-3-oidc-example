@@ -42,7 +42,6 @@ namespace DockerPipelineExample
         options.Scope.Add("openid");
         options.Scope.Add("profile");
         options.SaveTokens = true;
-        options.ClaimActions.MapAll();
         options.TokenValidationParameters = new TokenValidationParameters
         {
           NameClaimType = "name",
